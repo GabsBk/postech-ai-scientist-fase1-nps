@@ -2,15 +2,43 @@
 
 ## Objetivo
 
-Identificar os principais fatores que influenciam a satisfação dos clientes de um e-commerce e propor uma abordagem analítica para antecipação do NPS.
+Identificar os principais fatores que influenciam a satisfação dos clientes de um e-commerce e propor uma abordagem analítica capaz de antecipar sinais de insatisfação a partir de informações operacionais já disponíveis na empresa.
+
+---
 
 ## Contexto do Negócio
 
-Com o crescimento do e-commerce, a empresa passou a enfrentar desafios relacionados à experiência do cliente. O objetivo deste projeto é compreender quais fatores operacionais impactam a satisfação dos consumidores e como a Ciência de Dados pode auxiliar na tomada de decisão.
+Com o crescimento do e-commerce, a empresa passou a enfrentar desafios relacionados à experiência dos clientes e à capacidade de monitorar sua satisfação.
+
+Embora o Net Promoter Score (NPS) seja amplamente utilizado para mensurar a satisfação, nem todos os clientes respondem às pesquisas. Nesse contexto, o objetivo deste projeto é compreender quais fatores operacionais influenciam o NPS e como a Ciência de Dados pode auxiliar na identificação antecipada de clientes com maior risco de insatisfação.
+
+---
+
+## Base de Dados
+
+A base utilizada neste projeto contém 2.500 registros relacionados à experiência de clientes em um ambiente de e-commerce.
+
+Os dados contemplam:
+
+- Perfil dos clientes;
+- Informações dos pedidos;
+- Indicadores logísticos;
+- Indicadores de atendimento;
+- Métricas de satisfação (CSAT e NPS).
+
+A variável alvo utilizada ao longo das análises foi:
+
+```text
+nps_score
+```
+
+representando o nível de satisfação dos clientes após a jornada de compra.
+
+---
 
 ## Metodologia
 
-O projeto segue a metodologia CRISP-DM:
+O projeto foi desenvolvido seguindo a metodologia CRISP-DM:
 
 1. Business Understanding
 2. Data Understanding
@@ -19,17 +47,51 @@ O projeto segue a metodologia CRISP-DM:
 5. Modelagem Preditiva (Opcional)
 6. Storytelling e Recomendações
 
+---
+
+## Principais Insights
+
+As análises exploratórias permitiram identificar os principais fatores associados à satisfação dos clientes.
+
+Principais achados:
+
+- O atraso na entrega foi o fator operacional mais associado à redução do NPS;
+- Clientes com maior quantidade de reclamações tendem a apresentar níveis inferiores de satisfação;
+- Clientes que precisam interagir frequentemente com o atendimento tendem a relatar experiências menos satisfatórias;
+- Foi identificado um possível ponto de ruptura na experiência a partir de aproximadamente 4 a 5 dias de atraso;
+- Clientes mais satisfeitos apresentam maior probabilidade de recompra;
+- Os fatores operacionais mostraram maior influência sobre o NPS do que características financeiras dos pedidos.
+
+---
+
 ## Estrutura do Projeto
 
-```
+```text
 data/
+│
+├── raw/                 # Base original
+├── processed/           # Dados tratados
+│
 notebooks/
+│
+├── 01_eda_exploracao_inicial.ipynb
+│
 reports/
+│
+├── apresentação_final.pdf
+│
 images/
+│
+├── gráficos
+│
 models/
+│
+├── modelos preditivos (opcional)
 ```
 
-## Tecnologias
+---
+
+## Tecnologias Utilizadas
 
 - Python
 - Pandas
@@ -37,11 +99,59 @@ models/
 - Matplotlib
 - Seaborn
 - Scikit-Learn
-- Jupyter Notebook
+- Google Colab
+- GitHub
+
+---
+
+## Como Reproduzir a Análise
+
+### 1. Clone o repositório
+
+```bash
+git clone <url-do-repositorio>
+```
+
+### 2. Instale as dependências
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+### 3. Execute o notebook
+
+Abra o notebook localizado na pasta:
+
+```text
+notebooks/
+```
+
+e execute as células em sequência.
+
+---
+
+## Resultados Esperados
+
+Ao final da execução será possível:
+
+- Compreender o comportamento geral do NPS;
+- Identificar os principais fatores associados à satisfação;
+- Avaliar o impacto de atrasos e reclamações;
+- Identificar potenciais detratores;
+- Entender a relação entre satisfação e recompra;
+- Apoiar recomendações estratégicas para melhoria da experiência do cliente.
+
+---
 
 ## Integrantes
 
-- Nome 1
-- Nome 2
-- Nome 3
-- Nome 4
+- Gabriel dos Santos
+- Rodolfo
+- Guilherme Mendes
+- Kauê
+
+---
+
+## Licença
+
+Projeto desenvolvido exclusivamente para fins acadêmicos na Pós-Tech FIAP - AI Scientist.
