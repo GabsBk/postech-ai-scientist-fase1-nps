@@ -74,11 +74,11 @@ data/
 │
 notebooks/
 │
-├── 01_eda_exploracao_inicial.ipynb
+├── 01_EDA_ExploraçãoInicial.ipynb
 │
 reports/
 │
-├── apresentação_final.pdf
+├── Tech Challenge - Fase 1 (Case NPS Preditivo)_V2.pdf
 │
 images/
 │
@@ -145,10 +145,10 @@ Ao final da execução será possível:
 
 ## Integrantes
 
-- Gabriel dos Santos
-- Rodolfo
-- Guilherme Mendes
-- Kauê
+- Gabriel dos Santos Camilo
+- Rodolfo Gabriel Vieira
+- Kauê Henrique dos Santos
+- Guilherme Mendes Machado
 
 ---
 
