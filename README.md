@@ -68,25 +68,26 @@ Principais achados:
 
 ```text
 data/
-│
-├── raw/                 # Base original
-├── processed/           # Dados tratados
-│
-notebooks/
-│
-├── 01_EDA_ExploraçãoInicial.ipynb
-│
-reports/
-│
-├── Tech Challenge - Fase 1 (Case NPS Preditivo)_V2.pdf
-│
+├── desafio_nps_fase_1.csv
+├── dicionario_dados.md
+
 images/
-│
-├── gráficos
-│
-models/
-│
-├── modelos preditivos (opcional)
+├── 01_distribuicao_nps.png
+├── 02_heatmap_correlacao.png
+├── 03_impacto_atrasos_nps.png
+├── 04_impacto_reclamacoes_nps.png
+├── 05_nps_medio_por_atraso.png
+├── 06_nps_regiao.png
+├── 07_recompra_vs_nps.png
+
+notebooks/
+├── 01_EDA_ExploraçãoInicial.ipynb
+
+reports/
+├── Tech Challenge - Fase 1 (Case NPS Preditivo)_V2.pdf
+├── Gravação de Tech Challenge - Fase 1 (Case NPS Preditivo) - V2.mp4
+├── Video_Apresentacao.txt
+
 ```
 
 ---
@@ -109,7 +110,7 @@ models/
 ### 1. Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/GabsBk/postech-ai-scientist-fase1-nps
 ```
 
 ### 2. Instale as dependências
@@ -140,6 +141,34 @@ Ao final da execução será possível:
 - Identificar potenciais detratores;
 - Entender a relação entre satisfação e recompra;
 - Apoiar recomendações estratégicas para melhoria da experiência do cliente.
+
+---
+
+## Materiais para Avaliação
+
+### Notebook de Análise
+
+```text
+notebooks/01_EDA_ExploraçãoInicial.ipynb
+```
+
+### Apresentação
+
+```text
+reports/Tech Challenge - Fase 1 (Case NPS Preditivo)_V2.pdf
+```
+
+### Vídeo da Apresentação Executiva
+
+```text
+reports/Gravação de Tech Challenge - Fase 1 (Case NPS Preditivo) - V2.mp4
+```
+
+Informações adicionais também podem ser encontradas em:
+
+```text
+reports/Video_Apresentacao.txt
+```
 
 ---
 
