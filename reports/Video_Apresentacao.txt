@@ -1,0 +1,17 @@
+TECH CHALLENGE FASE 1 - NPS
+
+Vídeo da apresentação executiva:
+
+https://www.youtube.com/watch?v=AJE_PoSKIR0
+ou
+reports/
+│
+├── Gravação de Tech Challenge - Fase 1 (Case NPS Preditivo) - V2.mp4
+
+Vídeo como não listado.
+
+Integrantes:
+- Gabriel dos Santos Camilo
+- Rodolfo Gabriel Vieira
+- Kauê Henrique dos Santos
+- Guilherme Mendes Machado
